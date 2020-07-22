@@ -16,9 +16,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.page {
+    overflow: hidden;
+}
+
 /* Container */
 .container {
-    overflow: hidden;
     width: 100%;
     max-width: 1260px;
     padding: 0 15px;
@@ -1326,5 +1329,10 @@ footer {
     /* Features */
     .feature-item {
         margin-right: 0;
+    }
+
+    /* Video */
+    .video-info {
+        display: none;
     }
 }
