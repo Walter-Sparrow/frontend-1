@@ -928,6 +928,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 12px;
 }
 
+.posts-item {
+    margin-bottom: 20px;
+}
+
 .posts-item:hover .post-img {
     opacity: .3;
 }
