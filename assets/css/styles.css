@@ -159,6 +159,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px 40px;
     transition: background-color .2s linear, border .2s linear;
     box-shadow: 0 3px 0 #736357;
+    margin-bottom: 3px;
 }
 
 .btn:hover {
