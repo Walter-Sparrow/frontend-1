@@ -1285,12 +1285,12 @@ footer {
     color: #c7b299;
 }
 
-@keyframes rolling {
+@keyframes appear {
     from {
-        transform: translateY(-867px);
+        opacity: 0;
     }
     to {
-        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -1307,7 +1307,7 @@ footer {
         border-top: 1px solid transparent;
         border-radius: 0 0 4px 4px;
         text-align: center;
-        animation: rolling .3s ease-in;
+        animation: appear .2s ease-in;
     }
 
     .nav-item {
