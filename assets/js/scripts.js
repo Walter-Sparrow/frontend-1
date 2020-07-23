@@ -61,13 +61,14 @@ document.addEventListener('DOMContentLoaded', function () {
         header.classList.toggle("active");
     });
 
-    /* Scroll */
-    let data_scroll = document.getElementsByClassName("nav-item");
-    for (let element of data_scroll) {
-        element.addEventListener("click", function () {
-            let scroll_item = document.getElementById(this.dataset.scroll);
-            console.log(scroll_item);
-            scroll_item.scrollIntoView({ behavior: 'smooth'});
-        })
-    }
+    /* Fixed header */
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > screen.availHeight) {
+            header.classList.add("fixed");
+            header.style.animation = 'none';
+        } else {
+            header.classList.remove("fixed");
+            header.style.animation = 'appear-header';
+        }
+    })
 });
