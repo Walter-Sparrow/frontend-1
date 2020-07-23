@@ -49,4 +49,15 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.src = "assets/images/presentation/button-play.png";
         video_len.innerText = video.currentTime.toString().toMMSS();
     }
+
+    /* Nav toggle */
+    let hamburger_icon = document.getElementById("icon-hamburger"),
+        nav = document.getElementById("nav"),
+        header = document.getElementById("header");
+
+    hamburger_icon.parentElement.addEventListener("click", function () {
+        hamburger_icon.parentElement.classList.toggle("open");
+        nav.classList.toggle("active");
+        header.classList.toggle("active");
+    })
 });
