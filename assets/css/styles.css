@@ -1389,6 +1389,11 @@ footer {
 
 @media (max-width: 770px) {
     /* Header */
+    .header.fixed {
+        -webkit-box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.33);
+        -moz-box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.33);
+        box-shadow: 0px 3px 11px -4px rgba(0,0,0,0.33);
+    }
     .header-inner {
         flex-direction: row-reverse;
         justify-content: space-around;
