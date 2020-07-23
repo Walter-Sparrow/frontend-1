@@ -60,7 +60,14 @@ document.addEventListener('DOMContentLoaded', function () {
         nav.classList.toggle("active");
         header.classList.toggle("active");
     });
-
+    let dropmenu_items = nav.children;
+    for (var dropmenu_item of dropmenu_items) {
+        dropmenu_item.addEventListener("click", function () {
+            hamburger_icon.parentElement.classList.remove("open");
+            nav.classList.remove("active");
+            header.classList.remove("active");
+        })
+    }
     /* Fixed header */
     window.addEventListener("scroll", function () {
         if (window.scrollY > screen.availHeight) {
