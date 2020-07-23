@@ -46,12 +46,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .header.fixed {
     position: fixed;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: #191919;
 }
 
 .header.active {
     animation: appear-header .2s linear;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: #191919;
 }
 
 .header-inner {
@@ -1311,10 +1311,6 @@ footer {
     fill: white;
 }
 
-.icon:hover {
-    fill: #c7b299;
-}
-
 @keyframes appear {
     from {
         opacity: 0;
@@ -1326,10 +1322,10 @@ footer {
 
 @keyframes appear-header {
     from {
-        background-color: rgba(0, 0, 0, 0);
+        background-color: #191919;
     }
     to {
-        background-color: rgba(0, 0, 0, .9);
+        background-color: #191919;
     }
 }
 
@@ -1341,10 +1337,10 @@ footer {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: rgba(0, 0, 0, .9);
-        border: 1px solid rgba(0, 0, 0, .9);
+        background-color: #191919;
+        border: 1px solid #191919;
         border-top: 1px solid #2b2b2b;
-        border-radius: 0 0 4px 4px;
+        border-radius: 0 0 2px 2px;
         text-align: center;
         animation: appear .2s linear;
     }
@@ -1352,11 +1348,14 @@ footer {
     .nav-item {
         display: block;
         margin: 0;
-        padding: 3px 0;
+        padding: 13px 0;
+        border-bottom: 2px solid #5f5348;
+        border-radius: 6px;
     }
 
     .nav-item:last-child {
         margin-bottom: 0;
+        border-bottom: 1px solid transparent;
     }
 
     .nav-toggle {
