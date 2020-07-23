@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header.active {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .header-inner {
@@ -1302,8 +1302,8 @@ footer {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: rgba(0, 0, 0, .7);
-        border: 1px solid rgba(0, 0, 0, .7);
+        background-color: rgba(0, 0, 0, .9);
+        border: 1px solid rgba(0, 0, 0, .9);
         border-top: 1px solid transparent;
         border-radius: 0 0 4px 4px;
         text-align: center;
@@ -1428,7 +1428,7 @@ footer {
 @media (max-width: 575px) {
     /* Intro */
     .intro-text {
-        padding-top: 155px;
+        padding-top: 65%;
     }
 
     .title {

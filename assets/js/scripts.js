@@ -59,5 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
         hamburger_icon.parentElement.classList.toggle("open");
         nav.classList.toggle("active");
         header.classList.toggle("active");
-    })
+    });
+
+    /* Scroll */
+    let data_scroll = document.getElementsByClassName("nav-item");
+    for (let element of data_scroll) {
+        element.addEventListener("click", function () {
+            let scroll_item = document.getElementById(this.dataset.scroll);
+            console.log(scroll_item);
+            scroll_item.scrollIntoView({ behavior: 'smooth'});
+        })
+    }
 });
