@@ -60,15 +60,24 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+.search {
+    display: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
 }
 
 .logo--text {
     font-family: 'Raleway', sans-serif;
     font-size: 34px;
     font-weight: 400;
+    color: white;
 }
 
 /* Nav */
@@ -1295,6 +1304,17 @@ footer {
     color: #c7b299;
 }
 
+/* Icons */
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.icon:hover {
+    fill: #c7b299;
+}
+
 @keyframes appear {
     from {
         opacity: 0;
@@ -1368,6 +1388,20 @@ footer {
 }
 
 @media (max-width: 770px) {
+    /* Header */
+    .header-inner {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .search {
+        display: initial;
+    }
+
+    .logo--text {
+        display: none;
+    }
+
     /* Intro */
     .intro-text {
         width: 80%;
