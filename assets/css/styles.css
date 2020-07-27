@@ -1306,9 +1306,10 @@ footer {
 
 /* Icons */
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     fill: white;
+    cursor: pointer;
 }
 
 @keyframes appear {
